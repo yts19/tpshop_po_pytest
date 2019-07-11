@@ -1,0 +1,151 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1562762516990" stop="1562762546985">
+  <name>test_tpshop_login</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1562762516990" status="passed" stop="1562762540517">
+      <name>TestLogin.test_login[13212345678-123456-8888-13212-true]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9284-MainThread"/>
+        <label name="host" value="4WXAL6MFRVSBDV6"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1562762540518" status="passed" stop="1562762540916">
+      <name>TestLogin.test_login[-123456-8888-\u7528\u6237\u540d\u4e0d\u80fd\u4e3a\u7a7a!-false]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9284-MainThread"/>
+        <label name="host" value="4WXAL6MFRVSBDV6"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1562762540917" status="passed" stop="1562762541228">
+      <name>TestLogin.test_login[13212345678--8888-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a!-false]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9284-MainThread"/>
+        <label name="host" value="4WXAL6MFRVSBDV6"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1562762541229" status="passed" stop="1562762541537">
+      <name>TestLogin.test_login[13212345678-123456--\u9a8c\u8bc1\u7801\u4e0d\u80fd\u4e3a\u7a7a!-false]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9284-MainThread"/>
+        <label name="host" value="4WXAL6MFRVSBDV6"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1562762541538" status="failed" stop="1562762543853">
+      <name>TestLogin.test_login[13212345679-123456-8888-\u8d26\u53f7\u5b58\u5728!-false]</name>
+      <failure>
+        <message>AssertionError: assert '账号存在!' == '账号不存在!'
+  - 账号存在!
+  + 账号不存在!
+  ?   +</message>
+        <stack-trace>self = &lt;test_tpshop_login.TestLogin object at 0x0000000003C13E48&gt;
+phone = '13212345679', pwd = '123456', code = '8888', expect = '账号存在!'
+mark = 'false'
+
+    @pytest.mark.parametrize("phone,pwd,code,expect,mark",data_get())
+    def test_login(self,phone,pwd,code,expect,mark):
+    
+    
+        # 输入数据
+    
+        # 判断是否登录成功
+        if mark == "true":
+            self.page_tpshop.page_click_login_link_btn()
+            self.page_tpshop.page_login_proxy(phone, pwd, code)
+            try:
+                assert expect==self.page_tpshop.page_nickname()
+    
+            except Exception as e:
+                print(e)
+                # 日志信息
+                self.log.error(e)
+                # 截图
+                # self.page_tpshop.page_get_img('./img/login_{}.png'.format("%H%M%S"))
+                raise
+            finally:
+    
+                self.page_tpshop.page_click_login_out()
+                self.page_tpshop.page_click_login_link_btn()
+    
+        else:
+            self.page_tpshop.page_login_proxy(phone, pwd, code)
+    
+            try:
+    
+&gt;               assert expect == self.page_tpshop.page_get_text()
+E               AssertionError: assert '账号存在!' == '账号不存在!'
+E                 - 账号存在!
+E                 + 账号不存在!
+E                 ?   +
+
+scripts\test_tpshop_login.py:63: AssertionError</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="0adce2ef-7667-4f1d-9b1b-ec9d37a84730-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9284-MainThread"/>
+        <label name="host" value="4WXAL6MFRVSBDV6"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1562762543857" status="passed" stop="1562762544197">
+      <name>TestLogin.test_login[132123456783-123456-8888-\u8d26\u53f7\u683c\u5f0f\u4e0d\u5339\u914d!-false]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9284-MainThread"/>
+        <label name="host" value="4WXAL6MFRVSBDV6"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1562762544199" status="passed" stop="1562762546115">
+      <name>TestLogin.test_login[13212345678-1234566-8888-\u5bc6\u7801\u9519\u8bef!-false]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9284-MainThread"/>
+        <label name="host" value="4WXAL6MFRVSBDV6"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1562762546116" status="passed" stop="1562762546985">
+      <name>TestLogin.test_login[13212345678-123456-88889-\u9a8c\u8bc1\u7801\u9519\u8bef-false]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9284-MainThread"/>
+        <label name="host" value="4WXAL6MFRVSBDV6"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

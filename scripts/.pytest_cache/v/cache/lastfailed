@@ -1,0 +1,9 @@
+{
+  "test_tpshop_login.py::TestLogin::()::test_login[13800001111--8888-\\u5bc6\\u7801\\u4e0d\\u80fd\\u4e3a\\u7a7a!-false]": true,
+  "test_tpshop_login.py::TestLogin::()::test_login[13800001111-123456--\\u9a8c\\u8bc1\\u7801\\u4e0d\\u80fd\\u4e3a\\u7a7a!-false]": true,
+  "test_tpshop_login.py::TestLogin::()::test_login[13800001111-123456-8888-138-true]": true,
+  "test_tpshop_login.py::TestLogin::()::test_login[13800001111-123456-88889-\\u9a8c\\u8bc1\\u7801\\u9519\\u8bef-false]": true,
+  "test_tpshop_login.py::TestLogin::()::test_login[13800001111-1234566-8888-\\u5bc6\\u7801\\u9519\\u8bef!-false]": true,
+  "test_tpshop_login.py::TestLogin::()::test_login[138000011112-123456-8888-\\u8d26\\u53f7\\u683c\\u5f0f\\u4e0d\\u5339\\u914d!-false]": true,
+  "test_tpshop_login.py::TestLogin::()::test_login[13800001112-123456-8888-\\u8d26\\u53f7\\u4e0d\\u5b58\\u5728!-false]": true
+}
